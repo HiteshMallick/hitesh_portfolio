@@ -1,3 +1,37 @@
-h1{
-  color: red;
+@import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: "Clicker Script", cursive; */
+  font-family: "Poppins", sans-serif;
+}
+
+:root{
+  --mainColor: #fff;
+  --textColor: #111b20;
+  --secondaryColor: #FF5733 ;
+}
+
+.dark-theme{
+  --mainColor: #333;
+  --textColor: #fff;
+  --formColor: grey;
+  background-color: #333;
+}
+
+.light-theme{
+  --mainColor: #fff;
+  --textColor: #333;
+  --formColor: yellow;
+  background-color: #fff;
+}
+
+a{
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
 }

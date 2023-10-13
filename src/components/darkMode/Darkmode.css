@@ -1,0 +1,51 @@
+.style-switch{
+    position: fixed;
+    right: 0;
+    top: -45px;
+    border: 1px solid var(--mainColor);
+    background: var(--bg-black-100);
+    z-index: 101;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.style-switch .s-icon{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    font-size: 20px;
+    background: var(--mainColor);
+    right: 100%;
+    border: 1px solid var(--textColor);
+    margin-right: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 50%;
+}
+
+.style-switch .s-icon:hover{
+    box-shadow: 2px 2px 20px var(--shadow);
+}
+
+.style-switch .s-icon .sw-i{
+    line-height: 45px;
+}
+
+.style-switch .day-night{
+    top: 55px;
+}
+
+@media (max-width: 1024px){
+    .style-switch{
+        position: fixed;
+        right: 0;
+        top: 20px;
+        right: 5.6px;
+        border: 1px solid var(--mainColor);
+        background: var(--mainColor);
+        z-index: 101;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+    }    
+}

@@ -1,0 +1,155 @@
+.main-contents{
+    padding-left: 100px;
+    padding-right: 40px;
+}
+
+h2{
+    font-size: 40px;
+    color: var(--textColor);
+    font-weight: 700;
+}
+
+.udr-1{
+    background-color: var(--secondaryColor);
+    width: 10%;
+    height: 2px;
+    margin-bottom: 10px;
+}
+
+.udr-2{
+    background-color: var(--secondaryColor);
+    width: 5%;
+    height: 2px;
+    margin-bottom: 30px;
+}
+
+/* about-info */
+
+.about-info{
+    min-height: 100vh;
+}
+
+h3{
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: var(--textColor);
+}
+
+p{
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--textColor);
+}
+
+.buttons .btn{
+    margin-right: 15px;
+    margin-left: 10px;
+}
+
+.btn{
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 35px;
+    color: var(--textColor);
+    border: 40px;
+    display: inline-block;
+    white-space: nowrap;
+    margin-top: 40px;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+}
+
+/* tech-use */
+
+.tech-use{
+    display: flex;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.tech-use_Icon{
+    font-size: 2.2rem;
+    margin-left: 10px;
+}
+
+/* about-experience_info */
+
+.about-experience_info{
+    display: flex;
+    color:var(--textColor)
+}
+
+.education{
+    width: 50%;
+    margin-top: 30px;
+}
+
+.experience{
+    width: 50%;
+    margin-top: 30px;
+}
+
+.title{
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    margin-left: 16px;
+}
+
+/* timeline-info */
+
+.timeline{
+    background-color: (--mainColor);
+    padding: 30px 15px;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0 0 10px grey;
+}
+
+.timeline .timeline-item{
+    padding-left: 10px;
+    padding-bottom: 40px;
+}
+
+.timeline .timeline-item:last-child{
+    padding-bottom: 0;
+}
+
+.timeline .timeline-item .timeline-date{
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.timeline .timeline-item .timeline-title{
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    color: var(--secondaryColor);
+}
+
+.timeline .timeline-item .timeline-text{
+    line-height: 25px;
+    font-size: 16px;
+    text-align: justify;
+    color: var(--textColor);
+}
+
+
+@media (max-width: 1199px){
+    .main-contents{
+        padding-left: 30px;
+    }
+}
+
+@media (max-width: 500px){
+    .about-experience_info{
+        flex-direction: column;
+    }
+    .education,
+    .experience{
+        width: 100%;
+    }
+}
