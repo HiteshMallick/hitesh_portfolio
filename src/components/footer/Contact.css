@@ -104,8 +104,9 @@ form textarea{
 }
 
 .last_text p{
+    text-align: center;
     color: var(--textColor);
-    font-size: 14px;
+    font-size: 18px;
     font-weight: bold;
 }
 
@@ -113,8 +114,12 @@ form textarea{
     padding: 10px;
     border-radius: 8px;
     font-size: 15px;
-    color: var(--textColor);
     background-color: var(--secondaryColor);
+    cursor: pointer;
+}
+
+.top-item{
+    color: white;
 }
 
 @media (max-width: 1480) {

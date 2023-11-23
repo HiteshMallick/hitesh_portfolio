@@ -28,6 +28,7 @@ nav a{
 nav a:hover{
     color: var(--secondaryColor);
     transition: all 0.5s ease;
+    cursor: pointer;
 }
 
 header .nav-btn{
@@ -170,9 +171,8 @@ h3.my-profession{
 
 .home .home-img{
     flex: 0 0 40%;
-    min-width: 40%;
+    /* min-width: 40%; */
     text-align: center;
-    /* position: relative; */
 }
 
 
@@ -184,10 +184,10 @@ h3.my-profession{
     background-size: cover;
     border: 2px solid var(--textColor);
     order: 1;
-    width: 280px;
-    height: 280px;
+    width: 340px;
+    height: 380px;
     justify-self: center;
-    animation: profile_animate 9s ease-in-out infinite 1s;
+    animation: profile_animate 5s ease-in-out infinite 1s;
 }
 
 @keyframes profile_animate {

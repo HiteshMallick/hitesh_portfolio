@@ -1,6 +1,8 @@
 import React from 'react'
 import './Contact.css'
 
+import { Link } from 'react-scroll';
+
 import {
   FaFacebookF,
   FaLinkedinIn,
@@ -9,10 +11,11 @@ import {
   FaPhone,
 } from "react-icons/fa6";
 
-import {AiOutlineMail, AiFillYoutube, AiFillInstagram, AiOutlineArrowUp} from 'react-icons/ai'
+import {AiOutlineMail, AiFillInstagram, AiOutlineArrowUp} from 'react-icons/ai'
 
 
 const Contact = () => {
+
   return (
     <>
           <section className="contact" id="contact">
@@ -25,11 +28,10 @@ const Contact = () => {
           </div>
 
           <div className="contact_icon">
-            <a href=""> <span className="contact-i"><FaLinkedinIn/></span></a>
-            <a href=""> <span className="contact-i"><FaGithub/></span></a>
-            <a href=""> <span className="contact-i"><FaFacebookF/></span></a>
-            <a href=""> <span className="contact-i"><AiFillInstagram/></span></a>
-            <a href=""> <span className="contact-i"><AiFillYoutube/></span></a>
+            <a href="/"> <span className="contact-i"><FaLinkedinIn/></span></a>
+            <a href="/"> <span className="contact-i"><FaGithub/></span></a>
+            <a href="/"> <span className="contact-i"><FaFacebookF/></span></a>
+            <a href="/"> <span className="contact-i"><AiFillInstagram/></span></a>
           </div>
         </div>
 
@@ -37,8 +39,7 @@ const Contact = () => {
           <form>
             <input type="name" placeholder="Your Name" required/>
             <input type="email" placeholder="Your Email"/>
-            <input type="phone" placeholder="Your Mobile Number" required/> 
-            <textarea name="" id="" cols="30" rows="10" placeholder="How Can I Help You"></textarea>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
             <input type="submit" value="Send Message" className="submit" required/>
           </form>
         </div>
@@ -53,9 +54,12 @@ const Contact = () => {
         </div>
 
         <div className="top" id="home">
-          <a href="home"><AiOutlineArrowUp/></a>
+        <Link to="home" smooth={true} offset={-200} duration={500} className='top-item'>
+          <AiOutlineArrowUp/>
+        </Link>
         </div>
       </section>
+
     </>
   )
 }

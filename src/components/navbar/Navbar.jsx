@@ -3,7 +3,7 @@ import "./Navbar.css";
 import { FaTimes, FaBars } from "react-icons/fa";
 import { useTypewriter } from "react-simple-typewriter";
 
-import image from "../../assets/images/h-img.jpg";
+import image from "../../assets/images/hiteshimg.jpg";
 
 import { Link } from "react-scroll";
 
@@ -19,7 +19,7 @@ const Navbar = () => {
   };
 
   const [typeEffect] = useTypewriter({
-    words: ["Web Developer", "Video Editor", "Youtuber"],
+    words: ["Web Developer", "Video Editor"],
     loop: {},
     typeSpeed: 100,
     deleteSpeed: 40,
@@ -108,9 +108,9 @@ const Navbar = () => {
                   youtuber. My expertise is to create website, video and many
                   more...
                 </p>
-                <a href="/contact" className="btn hire-me">
+                <Link to="contact" smooth={true} offset={-70} duration={500} className="btn hire-me">
                   Hire Me
-                </a>
+                </Link>
               </div>
               <div className="home-img padd-15">
                 <img src={image} alt="profile-pic" />

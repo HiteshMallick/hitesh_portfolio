@@ -1,6 +1,9 @@
 import React from "react";
 import './About.css'
 import { SlCalender } from "react-icons/sl";
+import { Link } from "react-scroll";
+
+import Resume from '../../assets/images/Hitesh_Resume.pdf'
 
 import {
   FaHtml5,
@@ -22,7 +25,7 @@ const About = () => {
         {/* about-info */}
 
         <div className="about-info">
-          <h3>I'm Hitesh Kr Mallick</h3>
+          <h3>I'm Hitesh Kumar Mallick</h3>
           <p>
             Dedicated web developer with a strong foundation in front-end
             development and basic knowledge of back-end passion for creating
@@ -31,12 +34,12 @@ const About = () => {
             staying up-to-date with the latest web-development trends.
           </p>
           <div className="button">
-            <a href="file_pdf.pdf" download={'file_pdf.pdf'} className="btn">
-              Download CV
+            <a href={Resume} download="Hitesh_Resume" className="btn">
+              Resume
             </a>
-            <a href="#contact" className="btn">
+            <Link to="contact" smooth={true} offset={-60} duration={500} className="btn">
               Contact Me
-            </a>
+            </Link>
           </div>
 
           {/* tech-using */}
